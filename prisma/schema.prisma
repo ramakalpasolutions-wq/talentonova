@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  email     String    @unique
+  name      String?
+  password  String?
+  role      String    @default("user")
+  bookings  Booking[]
+  createdAt DateTime  @default(now())
+}
+
+model Service {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  image       String
+  bookings    Booking[]
+  createdAt   DateTime  @default(now())
+}
+
+model Gallery {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  imageUrl  String
+  createdAt DateTime @default(now())
+}
+
+model Booking {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String?  @db.ObjectId
+  serviceId         String?  @db.ObjectId
+  user              User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  service           Service? @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  name              String
+  email             String
+  phone             String
+  message           String?
+  amount            Float    @default(0)
+  razorpayOrderId   String?
+  razorpayPaymentId String?
+  status            String   @default("pending")
+  adminNotes        String?
+  meetingDate       DateTime?
+  createdAt         DateTime @default(now())
+}
+
+model Contact {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  email     String
+  phone     String?
+  reason    String?  @default("general")
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model SiteSettings {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+model HeroImage {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String?
+  imageUrl  String
+  createdAt DateTime @default(now())
+}
+
+// ─── NEW: OTP Verification ───
+model OtpVerification {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  otp       String
+  name      String
+  password  String
+  attempts  Int      @default(0)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
