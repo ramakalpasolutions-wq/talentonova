@@ -21,7 +21,7 @@ model Service {
   id          String    @id @default(auto()) @map("_id") @db.ObjectId
   title       String
   description String
-  image       String
+  image       String?   // ← Changed to optional
   bookings    Booking[]
   createdAt   DateTime  @default(now())
 }
@@ -76,7 +76,6 @@ model HeroImage {
   createdAt DateTime @default(now())
 }
 
-// ─── NEW: OTP Verification ───
 model OtpVerification {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   email     String   @unique
