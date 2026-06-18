@@ -54,7 +54,7 @@ export async function POST(request) {
         await transporter.sendMail({
           from: process.env.EMAIL_USER,
           to: bookingData.email,
-          subject: '✅ Consultation Booked - TalentoNova',
+          subject: '✅ Consultation Booked - TalentaNova',
           html: `
             <div style="font-family:Arial;max-width:600px;margin:0 auto;background:#FFF6DE;padding:30px;border-radius:12px">
               <h2 style="color:#3E2C23">🎉 Consultation Confirmed!</h2>

@@ -111,7 +111,7 @@ export default function BookPage() {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: consultationFee * 100,
         currency: 'INR',
-        name: 'TalentoNova Consultancy',
+        name: 'TalentaNova Consultancy',
         description: 'In-Person Consultation Booking',
         order_id: orderId,
         handler: async function (response) {

@@ -25,8 +25,8 @@ const services = [
 const contactInfo = [
   {
     Icon: Mail,
-    text: 'info@talentanova.com',
-    href: 'mailto:info@talentanova.com',
+    text: 'info@Talentanova.com',
+    href: 'mailto:info@Talentanova.com',
   },
   {
     Icon: Phone,
@@ -170,7 +170,7 @@ export default function Footer() {
                   letterSpacing: '-0.5px',
                 }}
               >
-                Talento<span style={{ color: '#DE802B' }}>Nova</span>
+                Talenta<span style={{ color: '#DE802B' }}>Nova</span>
               </div>
               <p
                 style={{
@@ -411,7 +411,7 @@ export default function Footer() {
                 opacity: 0.85,
               }}
             >
-              © {new Date().getFullYear()} TalentoNova. Made with
+              © {new Date().getFullYear()} TalentaNova. Made with
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}

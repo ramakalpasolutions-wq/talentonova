@@ -254,7 +254,7 @@ export default function HeroSection({ heroImages = [] }) {
               opacity: 0.9,
             }}
           >
-            Talento Nova
+            Talenta Nova
           </motion.div>
 
           {/* Tagline (bold like "Your Trusted Partner") */}
@@ -636,7 +636,7 @@ export default function HeroSection({ heroImages = [] }) {
             display: 'inline-block',
           }}
         >
-          Talento Nova
+          Talenta Nova
         </motion.span>
       </motion.span>
     </motion.h1>

@@ -283,7 +283,7 @@ export default function AboutPage() {
               fontWeight: 600,
             }}
           >
-            <Sparkles size={14} /> ABOUT TALENTO NOVA
+            <Sparkles size={14} /> ABOUT Talenta NOVA
           </div>
           <h1
             style={{
@@ -385,7 +385,7 @@ export default function AboutPage() {
                 opacity: 0.82,
               }}
             >
-              <strong style={{ color: '#3E2C23' }}>Talento Nova</strong> was
+              <strong style={{ color: '#3E2C23' }}>Talenta Nova</strong> was
               founded in 2010 with a simple yet powerful belief — every
               ambitious student and professional deserves access to world-class
               education and career opportunities, regardless of where they come
@@ -1067,7 +1067,7 @@ export default function AboutPage() {
         >
           <SectionHeader
             badge="WHY CHOOSE US"
-            title="The Talento Nova Difference"
+            title="The Talenta Nova Difference"
             subtitle="Four reasons families across India trust us with their biggest dreams"
             light
           />

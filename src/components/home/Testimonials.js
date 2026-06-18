@@ -11,7 +11,7 @@ const testimonials = [
     university: 'University of Manchester',
     course: 'MSc Data Science',
     rating: 5,
-    text: 'TalentoNova made my dream of studying in the UK a reality. From visa guidance to SOP review, they were with me at every step. Got into my first choice university!',
+    text: 'TalentaNova made my dream of studying in the UK a reality. From visa guidance to SOP review, they were with me at every step. Got into my first choice university!',
     avatar: 'PS',
   },
   {
@@ -38,7 +38,7 @@ const testimonials = [
     university: 'NYU Stern',
     course: 'MS Finance',
     rating: 5,
-    text: 'Got into NYU with their guidance! The IELTS coaching they provided helped me score 8.5 bands. Highly recommend TalentoNova to anyone wanting to study abroad.',
+    text: 'Got into NYU with their guidance! The IELTS coaching they provided helped me score 8.5 bands. Highly recommend TalentaNova to anyone wanting to study abroad.',
     avatar: 'KK',
   },
 ]

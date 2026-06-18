@@ -115,7 +115,7 @@ export default function Navbar() {
       letterSpacing: '-0.5px',
     }}
   >
-    Talento Nova
+    Talenta Nova
   </span>
   <span
     style={{

@@ -217,8 +217,8 @@ export default function ContactPage() {
             {
               icon: Mail,
               label: 'Email',
-              value: 'info@talentanova.com',
-              href: 'mailto:info@talentanova.com',
+              value: 'info@Talentanova.com',
+              href: 'mailto:info@Talentanova.com',
             },
             {
               icon: Phone,

@@ -89,7 +89,7 @@ export async function POST(request) {
     })
 
     await transporter.sendMail({
-      from: `"Talento Nova" <${process.env.EMAIL_USER}>`,
+      from: `"Talenta Nova" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: `🔐 Your OTP Code: ${otp}`,
       html: `
@@ -98,7 +98,7 @@ export async function POST(request) {
           <!-- Header -->
           <div style="background:linear-gradient(135deg,#3E2C23 0%,#2a1f18 100%);padding:32px 30px;text-align:center">
             <div style="color:#DE802B;font-size:28px;font-weight:800;margin-bottom:4px">
-              Talento<span style="color:#FFFFFF">Nova</span>
+              Talenta<span style="color:#FFFFFF">Nova</span>
             </div>
             <div style="color:rgba(255,255,255,0.7);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">
               Email Verification
@@ -140,7 +140,7 @@ export async function POST(request) {
 
           <!-- Footer -->
           <div style="background:#3E2C23;color:rgba(255,255,255,0.7);padding:20px 30px;text-align:center;font-size:12px">
-            © ${new Date().getFullYear()} Talento Nova Consultancy
+            © ${new Date().getFullYear()} Talenta Nova Consultancy
           </div>
         </div>
       `,

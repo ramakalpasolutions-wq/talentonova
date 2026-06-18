@@ -788,7 +788,7 @@ export default function DashboardClient({ session, bookings }) {
                           fontWeight: 600,
                         }}
                       >
-                        🎉 Thank you for choosing TalentoNova! Hope to see you
+                        🎉 Thank you for choosing TalentaNova! Hope to see you
                         again.
                       </div>
                     )}

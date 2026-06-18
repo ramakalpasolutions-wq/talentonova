@@ -361,7 +361,7 @@ export default function LoginPage() {
             'Verify Your Email'
           ) : (
             <>
-              Talento<span style={{ color: '#DE802B' }}>Nova</span>
+              Talenta<span style={{ color: '#DE802B' }}>Nova</span>
             </>
           )}
         </motion.div>

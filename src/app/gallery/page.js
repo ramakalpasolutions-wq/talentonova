@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma'
 import GalleryClient from '@/components/GalleryClient'
 
 export const metadata = {
-  title: 'Gallery | Talento Nova',
+  title: 'Gallery | Talenta Nova',
   description: 'Real moments from our students journeys abroad',
 }
 
